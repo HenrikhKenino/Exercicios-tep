@@ -1,3 +1,7 @@
+"""
+Website: AtCoder
+Link: https://atcoder.jp/contests/abc149/tasks/abc149_c?lang=en
+"""
 def next_prime(a):
     if a <= 2:
         return 2

@@ -1,3 +1,8 @@
+/*
+Website: AtCoder
+Link: https://atcoder.jp/contests/abc043/tasks/abc043_b
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;

@@ -1,3 +1,7 @@
+"""
+Website: Codeforces
+Link: https://codeforces.com/problemset/problem/472/A
+"""
 x=int(input())
 if x%2 == 0:
     z= x-4

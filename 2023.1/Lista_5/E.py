@@ -1,3 +1,7 @@
+"""
+Website: UVA
+Link: https://vjudge.net/problem/UVA-11827
+"""
 from math import gcd
 x = int(input())
 for _ in range(x):

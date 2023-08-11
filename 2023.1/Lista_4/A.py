@@ -1,5 +1,8 @@
+"""
+Website: AtCoder
+Link: https://atcoder.jp/contests/abc097/tasks/abc097_b?lang=en
+"""
 from math import sqrt
-
 x = int(input())
 if x ==1:
     print(1)

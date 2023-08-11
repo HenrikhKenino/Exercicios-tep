@@ -1,3 +1,7 @@
+"""
+Website: Online Judge
+Link: https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2126
+"""
 x = int(input())
 p=x
 while x>=0:

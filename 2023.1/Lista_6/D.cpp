@@ -1,10 +1,8 @@
 /*
-Website: AtCoder
-Link: https://atcoder.jp/contests/arc062/tasks/arc062_a?lang=en
+Website: Codeforces
+Link: https://codeforces.com/problemset/problem/236/B
 */
-
 #include <bits/stdc++.h>
-
 using namespace std;
 
 typedef long long ll;
@@ -21,21 +19,28 @@ typedef vector<ii> vii;
 #define fastInp cin.tie(0); cout.tie(0); ios_base::sync_with_stdio(0);
 #define vin(vt) for (auto &e : vt) cin >> e
 #define LSOne(S) ((S) & -(S))
-#define teto(a, b) (a + b - 1)/ b
 
+#define m 1000010
+int sum[m]={0};
 void solve(){
-    int t;
-    cin >> t;
-	ll ans = 1;
-	ll a=1, b=1; 
-	while(t--){
-		ll x, y; cin >> x >> y;
-		ll fac = max(teto(a,x), teto(b,y));
-		a = x * fac;
-		b = y * fac;
-	}
-	cout << a + b << endl;
+    
+    for(int i=1; i<=m;i++){
+        for(int j=i;j<=m;j+=i){
+            sum[j]++;
+        }
+    }
+    int a,b,c,z=0;
+    cin >> a >> b >> c;
+    for(int i=1;i<=a;i++){
+        for(int j=1;j<=b;j++){
+            for(int k=1;k<=c;k++){
+                z = (z+sum[i*j*k]) % 1073741824;        
+            }
+        }
+    }
+    cout << z << endl;
 }
+
 int main(){
     fastInp;
     solve();

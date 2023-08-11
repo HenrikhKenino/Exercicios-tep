@@ -1,3 +1,8 @@
+"""
+Website: UVA
+Link: https://vjudge.net/problem/UVA-10407
+"""
+
 from math import gcd
 while True:
     x=list(map(int,input().split()))

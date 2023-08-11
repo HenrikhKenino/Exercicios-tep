@@ -1,11 +1,11 @@
+/*
+Website: AtCoder
+Link: https://atcoder.jp/contests/abc148/tasks/abc148_a
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
-
-// Aqui simula um exame q tem 3 alternativas, ele vai me dar no input duas q estao erradas e tenho q printar a terceira q e a certa
-    // input: 3
-    //        1
-        //output: 2
 
 int main(){
 

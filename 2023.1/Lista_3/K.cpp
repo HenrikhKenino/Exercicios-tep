@@ -1,4 +1,7 @@
-//Passei esta e dava erro mas n descobri o erro:
+/*
+Website: Online Judge
+Link: https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2126
+*/
 
 #include <bits/stdc++.h>
 

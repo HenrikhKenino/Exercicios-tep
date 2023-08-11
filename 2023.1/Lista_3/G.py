@@ -1,3 +1,7 @@
+"""
+Website: Codeforces
+Link: https://codeforces.com/problemset/problem/258/A
+"""
 x = input()  
 for i in range(0,len(x)):
     if x[i] == "0":

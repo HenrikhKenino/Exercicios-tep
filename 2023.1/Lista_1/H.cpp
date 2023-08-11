@@ -1,12 +1,11 @@
+/*
+Website: Codeforces
+Link: https://codeforces.com/problemset/problem/236/A
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
-
-//Neste exercicio eu recebia uma string n vazia e tinha q ver a quantidade de elementos exclusivos na string
-    // se essa quantidade fosse par printar "CHAT WITH HER!" se fosse impar "IGNORE HIM!"
-        //input: sevenkplus
-            //output: CHAT WITH HER!
-
 
 bool v(string k[], string p, int g){
     for(int c=0; c<g;c++){

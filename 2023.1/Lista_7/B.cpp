@@ -1,10 +1,8 @@
 /*
 Website: AtCoder
-Link: https://atcoder.jp/contests/arc062/tasks/arc062_a?lang=en
+Link: https://atcoder.jp/contests/abc172/tasks/abc172_d?lang=en
 */
-
 #include <bits/stdc++.h>
-
 using namespace std;
 
 typedef long long ll;
@@ -21,21 +19,19 @@ typedef vector<ii> vii;
 #define fastInp cin.tie(0); cout.tie(0); ios_base::sync_with_stdio(0);
 #define vin(vt) for (auto &e : vt) cin >> e
 #define LSOne(S) ((S) & -(S))
-#define teto(a, b) (a + b - 1)/ b
+
+const int m = 1e7+1;
+ll c[m]={0};
 
 void solve(){
-    int t;
-    cin >> t;
-	ll ans = 1;
-	ll a=1, b=1; 
-	while(t--){
-		ll x, y; cin >> x >> y;
-		ll fac = max(teto(a,x), teto(b,y));
-		a = x * fac;
-		b = y * fac;
-	}
-	cout << a + b << endl;
+    int n;
+    cin >> n;
+    for(int i=1; i<=n; i++) for(int j=i; j<=n; j+=i) c[j]++;
+    ll ans = 0;
+    for(int i=0;i<=n;i++) ans+=i*c[i];
+    cout << ans << endl;
 }
+
 int main(){
     fastInp;
     solve();
